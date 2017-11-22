@@ -13,5 +13,5 @@ https://github.com/plataformatec/devise#getting-started
 https://github.com/plataformatec/devise
 https://github.com/jdwyat2/title_site
 
-
+I am wandering if the user_id I generated to Foreign Key between References and Users works. If I have problems later on, check that out.
 

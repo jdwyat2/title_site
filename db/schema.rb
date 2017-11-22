@@ -11,7 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171122172500) do
+ActiveRecord::Schema.define(version: 20171122182344) do
+
+  create_table "references", force: :cascade do |t|
+    t.string   "email",            default: "", null: false
+    t.boolean  "approve"
+    t.boolean  "siteadd"
+    t.string   "publicidentifier", default: "", null: false
+    t.string   "reference",        default: "", null: false
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
+    t.integer  "user_id"
+  end
+
+  add_index "references", ["user_id"], name: "index_references_on_user_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
