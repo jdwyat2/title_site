@@ -1,7 +1,7 @@
 https://dbgaus.wixsite.com/brookstitle
 
 
-I can't get the blast devise views to be recognized. 
+I can't get the blast devise views to be recognized.
 I think it is because I need to add the sign in/ up pages to my routes.
 Might could google other people's examples of Devise (could use bloc projects)
 
@@ -15,3 +15,4 @@ https://github.com/jdwyat2/title_site
 
 I am wandering if the user_id I generated to Foreign Key between References and Users works. If I have problems later on, check that out.
 
+I need to figure out how to access data in administrator version and how to access just user's data in user version.

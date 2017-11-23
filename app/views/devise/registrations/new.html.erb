@@ -5,7 +5,7 @@
 
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+    <%= f.email_field :email, autofocus: true %><br />
   </div>
 
   <div class="field">
@@ -15,17 +15,29 @@
     <% end %><br />
     <%= f.password_field :password, autocomplete: "off" %>
   </div>
-  
-
-  
-<!--  <div class = "field">
-Needs the first%    <= f.label :firstname %><br />
-Needs the first%    < f.firstname_field :firstname, autofocus: true %>
-  </div>-->
 
   <div class="field">
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
+  </div>
+  
+  <div class="field">
+    <br />
+    <%=f.label :first_name %><br />
+      <%= f.text_field :firstname, autofocus: true %><br />
+    <%=f.label :last_name %><br />
+      <%= f.text_field :lastname, autofocus: true %><br />
+    <%=f.label :phone %><br />
+      <%= f.text_field :phone, autofocus: true %><br />
+    <%=f.label :address %><br />
+      <%= f.text_field :address, autofocus: true %><br />
+    <%=f.label :zip %><br />
+      <%= f.text_field :zip, autofocus: true %><br />
+    <%=f.label :state %><br />
+      <%= f.text_field :state, autofocus: true %><br />
+    <%=f.label :services %><br />
+      <%= f.select :services, [['Closing','closing'],['Title','title'],['Escrow','escrow'],['Multiple','multiple']], autofocus: true %>
+      <br /><br /> 
   </div>
 
   <div class="actions">
