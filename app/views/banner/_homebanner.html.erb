@@ -10,19 +10,19 @@
         <% end %>
     
     
-    
-        <table>
-            <tr>
-                <th><%= link_to "Home", welcome_index_path %></th>
-                <th><%= link_to "About", welcome_about_path %></th>
-                <th><%= link_to "Title Services", 'titleServices' %></th>
-                <th><%= link_to "Escrow Services", 'escrowServices' %></th>
-                <th><%= link_to "Closing Services", 'closingServices' %></th>
-                <th><%= link_to "FAQs", 'FAQ' %></th>
-                <th><%= link_to "References", 'references' %></th>
-            </tr>
-        </table>
-        
+        <div class="container">
+            <table class="nav nav-tabs">
+                <tr>
+                    <th><%= link_to "Home", welcome_index_path %></th>
+                    <th><%= link_to "About", welcome_about_path %></th>
+                    <th><%= link_to "Title Services", 'titleServices' %></th>
+                    <th><%= link_to "Escrow Services", 'escrowServices' %></th>
+                    <th><%= link_to "Closing Services", 'closingServices' %></th>
+                    <th><%= link_to "FAQs", 'FAQ' %></th>
+                    <th><%= link_to "References", 'references' %></th>
+                </tr>
+            </table>
+        </div>
 </div>
 
 <!--
